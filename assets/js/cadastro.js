@@ -34,3 +34,5 @@ function saveRecipe() {
 }
 
 export default saveRecipe
+
+// PRÓXIMO PASSO: RESGATAR INFO DO INDEXEDDB E COLOCAR EM CADERNO.HTML
