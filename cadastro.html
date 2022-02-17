@@ -13,21 +13,68 @@
     </header>
     <main>
       <p>Insira nos campos abaixo os dados da sua nova receita:</p>
-      <form action="#">
-        <label for="">URL da imagem (.jpg ou .png)</label>
-        <input type="text" name="" id="" /><br />
-        <label for="">Título da receita:</label>
-        <input type="text" name="" id="" /><br />
-        <label for="">Ingredientes:</label>
-        <input type="text" name="" id="" /><br />
-        <label for="">Passo a passo:</label>
-        <textarea name="" id="" cols="30" rows="10"></textarea><br />
-        <label for="">Tags</label>
-        <input type="text" name="" id="" /><br />
-        <button type="submit">Salvar receita</button>
+      <form class="form" action="#">
+        <label for="recipeName">Título da receita:</label>
+        <input
+          class="form__input"
+          type="text"
+          name=""
+          id="recipeName"
+          data-recipeName
+          required
+        /><br />
+
+        <label for="ingredients">Ingredientes:</label>
+        <input
+          class="form__input"
+          type="text"
+          name=""
+          id="ingredients"
+          data-ingredients
+          required
+        /><br />
+
+        <label for="procedures">Passo a passo:</label>
+        <textarea
+          class="form__input"
+          name=""
+          id="procedures"
+          data-procedures
+          required
+        ></textarea
+        ><br />
+
+        <label for="tags">Tags</label>
+        <input
+          class="form__input"
+          type="text"
+          name=""
+          id="tags"
+          data-tags
+        /><br />
+
+        <label for="imgUrl">URL da imagem (.jpg, .jpeg ou .png)</label>
+        <input
+          class="form__input"
+          type="text"
+          name=""
+          id="imgUrl"
+          data-imgUrl
+        /><br />
+
+        <button class="form__button" type="submit" data-save>
+          Salvar receita
+        </button>
       </form>
       <a href="caderno.html">Ir para o caderno</a>
     </main>
     <footer>Rodapé</footer>
+
+    <script type="module" src="assets/js/main.js"></script>
+    <!-- Localbase / IndexedDB -->
+    <script src="https://unpkg.com/localbase/dist/localbase.min.js"></script>
+    <script>
+      let db = new Localbase('db')
+    </script>
   </body>
 </html>
