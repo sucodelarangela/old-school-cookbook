@@ -39,11 +39,12 @@ function getRecipes() {
     .get()
     .then(recipes => {
       const cardsContainer = document.querySelector('[data-cards]')
+
       recipes.forEach(obj => {
         const card = document.createElement('a')
         card.classList.add('cards__link')
         card.innerHTML = `<a>
-        <img src="${obj.image}" alt="Prato pronto" />
+        <img height="120px" src="${obj.image}" alt="Prato pronto" onerror="this.onerror=null;this.src='assets/images/empty_plate.jpg'" />
         <h4>${obj.name}</h4>
         </a>`
         cardsContainer.appendChild(card)
