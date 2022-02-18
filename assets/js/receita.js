@@ -47,5 +47,7 @@ function openRecipes() {
 }
 
 function deleteRecipe() {
-  console.log('deleted')
+  const title = document.querySelector('h2').innerText
+  db.collection('recipes').doc({name: title}).delete()
+  location.reload()
 }
