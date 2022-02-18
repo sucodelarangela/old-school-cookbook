@@ -16,20 +16,14 @@
         <input type="search" name="" id="" />
         <button type="submit">Pesquisar</button>
       </div>
-      <div>
-        <!-- Example -->
-        <a href="receita.html">
-          <img src="" alt="Comida" />
-          <h4>Nome da receita</h4>
-        </a>
-        Lorem ipsum dolor sit amet consectetur, adipisicing elit. Sed, adipisci
-        necessitatibus placeat, dolorem esse cupiditate ad nulla expedita,
-        laudantium sapiente neque aliquid ab. Iste similique, aliquam
-        necessitatibus doloremque voluptate saepe?
-        <!-- Anchors will be created as cards (image and caption) and organized as grid (two columns). Those cards will be created from image url and title input inside the form in cadastro.html -->
-        <!-- When clicked, those cards will redirect the user to the recipe page per se, where all the details of the recipe will be available -->
-      </div>
+      <div class="cards" data-cards></div>
     </main>
     <footer>Rodapé</footer>
+
+    <script type="module" src="assets/js/caderno.js"></script>
+    <script src="https://unpkg.com/localbase/dist/localbase.min.js"></script>
+    <script>
+      let db = new Localbase('db')
+    </script>
   </body>
 </html>

@@ -1,4 +1,4 @@
-import saveRecipe from './cadastro.js'
+import {saveRecipe} from './cadastro.js'
 
 const saveBtn = document.querySelector('[data-save]')
 

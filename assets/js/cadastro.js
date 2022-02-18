@@ -14,7 +14,6 @@ function saveRecipe() {
   ) {
     // Create and save recipe to IndexedDB using localbase library
     db.collection('recipes').add({
-      id: indexedDB.length,
       image: imageUrl.value,
       name: recipeName.value,
       ingredients: ingredients.value,
@@ -28,11 +27,28 @@ function saveRecipe() {
     ingredients.value = ''
     procedures.value = ''
     tags.value = ''
+
+    location.reload()
   } else {
     console.log('erro')
   }
 }
 
-export default saveRecipe
+function getRecipes() {
+  db.collection('recipes')
+    .get()
+    .then(recipes => {
+      const cardsContainer = document.querySelector('[data-cards]')
+      recipes.forEach(obj => {
+        const card = document.createElement('a')
+        card.classList.add('cards__link')
+        card.innerHTML = `<a>
+        <img src="${obj.image}" alt="Prato pronto" />
+        <h4>${obj.name}</h4>
+        </a>`
+        cardsContainer.appendChild(card)
+      })
+    })
+}
 
-// PRÓXIMO PASSO: RESGATAR INFO DO INDEXEDDB E COLOCAR EM CADERNO.HTML
+export {saveRecipe, getRecipes}
