@@ -10,12 +10,12 @@ function openRecipes() {
         .doc({name: recipeName})
         .get()
         .then(recipe => {
-          const image = recipe.image
           const name = recipe.name
           const ingredients = recipe.ingredients
           const procedures = recipe.procedures
           const tags = recipe.tags
-          const newHtml = `<!DOCTYPE html>
+          const recipePage = window.open('', '_self')
+          recipePage.document.write(`<!DOCTYPE html>
           <html lang="pt-br">
             <head>
               <meta charset="UTF-8" />
@@ -37,16 +37,15 @@ function openRecipes() {
                 <p>${tags}</p>
               </main>
               <a href="caderno.html">Voltar para o caderno</a>
+              <button type="button" onclick="deleteRecipe()">Excluir receita</button>
               <footer>Rodapé</footer>
             </body>
-          </html>`
-
-          const winURL = URL.createObjectURL(
-            new Blob([newHtml], {type: 'text/html'})
-          )
-
-          const win = window.open(winURL, 'win')
+          </html>`)
         })
     })
   })
+}
+
+function deleteRecipe() {
+  console.log('deleted')
 }
