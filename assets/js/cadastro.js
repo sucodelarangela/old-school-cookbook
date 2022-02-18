@@ -28,7 +28,7 @@ function saveRecipe() {
     procedures.value = ''
     tags.value = ''
 
-    location.reload()
+    db.collection('recipes').doc('start').delete({})
   } else {
     console.log('erro')
   }

@@ -72,9 +72,11 @@
 
     <script type="module" src="assets/js/main.js"></script>
     <!-- Localbase / IndexedDB -->
-    <script src="https://unpkg.com/localbase/dist/localbase.dev.js"></script>
+    <script src="https://unpkg.com/localbase/dist/localbase.min.js"></script>
+
     <script>
       let db = new Localbase('db')
+      db.collection('recipes').doc('start').set({})
     </script>
   </body>
 </html>
