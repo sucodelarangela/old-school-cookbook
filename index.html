@@ -4,22 +4,85 @@
     <meta charset="UTF-8" />
     <meta http-equiv="X-UA-Compatible" content="IE=edge" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-    <title>The Old School Cookbook | Home</title>
+    <link rel="preconnect" href="https://fonts.googleapis.com" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+    <link
+      href="https://fonts.googleapis.com/css2?family=Beth+Ellen&family=Poppins:wght@400;700&family=Special+Elite&display=swap"
+      rel="stylesheet"
+    />
+    <title>Old School Cookbook | Home</title>
+    <link rel="stylesheet" href="assets/css/base.css" />
+    <link rel="stylesheet" href="assets/css/index.css" />
+    <link rel="stylesheet" href="assets/fonts/icons.css" />
   </head>
+
   <body>
-    <header>
-      <h1>The Old School Cookbook</h1>
+    <header class="header">
+      <h1 class="header__title title">Old-School Cookbook</h1>
     </header>
+
     <main>
-      <p>
-        Lorem ipsum dolor sit amet consectetur adipisicing elit. Fugiat modi,
-        in, ad commodi esse ipsam dolore facere laborum nobis molestiae
-        asperiores, mollitia et dignissimos nesciunt blanditiis a quod eius.
-        Qui?
-      </p>
-      <a href="cadastro.html" role="button">Criar nova receita</a>
-      <a href="caderno.html" role="button">Ver suas receitas</a>
+      <section class="cover container">
+        <div class="cover__logo">
+          <img
+            class="cover__title--img"
+            src="assets/images/cookbook-logo.png"
+            alt=""
+          />
+          <p class="cover__subtitle subtitle">Caderno de receitas</p>
+        </div>
+      </section>
+      <section class="actions container">
+        <a
+          class="actions__button register title"
+          href="cadastro.html"
+          role="button"
+          >Criar receita</a
+        >
+        <a class="actions__button view title" href="caderno.html" role="button"
+          >Ver receita</a
+        >
+      </section>
     </main>
-    <footer>Rodapé</footer>
+
+    <footer class="footer">
+      <div class="footer__brand subtitle">
+        <a href="https://angelacaldas.vercel.app/">
+          <i class="icon-logo"></i>
+        </a>
+        <p>Design & construção por Angela Caldas</p>
+        <p>Todos os direitos reservados.</p>
+      </div>
+      <div class="footer__social">
+        <ul>
+          <li>
+            <a
+              href="https://www.linkedin.com/in/angela-caldas/"
+              target="_blank"
+            >
+              <i class="icon-linkedin"></i>
+            </a>
+          </li>
+          <li>
+            <a href="https://github.com/sucodelarangela" target="_blank">
+              <i class="icon-github"></i>
+            </a>
+          </li>
+          <li>
+            <a href="https://www.instagram.com/sucodelarangela" target="_blank">
+              <i class="icon-instagram"></i>
+            </a>
+          </li>
+          <li>
+            <a href="https://twitter.com/sucodelarangela" target="_blank">
+              <i class="icon-twitter"></i>
+            </a>
+          </li>
+        </ul>
+      </div>
+    </footer>
+    <div class="footer__bg">
+      <img src="assets/images/footer-bg.png" alt="" />
+    </div>
   </body>
 </html>

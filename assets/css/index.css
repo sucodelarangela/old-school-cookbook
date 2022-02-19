@@ -1,0 +1,129 @@
+.header,
+.footer {
+  padding: 1rem 4rem;
+}
+
+.header__title {
+  font-size: 1rem;
+  color: var(--black);
+  opacity: 0;
+}
+
+.cover {
+  padding: 5rem auto;
+}
+
+.cover__logo {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  position: relative;
+}
+
+.cover__title--img {
+  width: 100%;
+  max-width: 30rem;
+  margin: 0 auto;
+  filter: drop-shadow(0 2px 0 var(--black));
+}
+
+.cover__subtitle {
+  position: absolute;
+  bottom: 10%;
+  left: 50%;
+  transform: translateX(-50%);
+  font-size: 1rem;
+  color: var(--black);
+  text-align: center;
+  width: 100%;
+  z-index: 10;
+}
+
+.cover__spiral {
+  background: url('../images/spiral.png') repeat-y;
+  background-size: 4.5rem;
+  position: absolute;
+  left: -2.5rem;
+  top: 0;
+  width: 4.5rem;
+  height: 100%;
+  z-index: 100;
+}
+
+.actions {
+  display: grid;
+  gap: 2rem;
+  justify-content: center;
+  filter: drop-shadow(2px 2px 0 var(--black));
+}
+
+.actions__button {
+  color: var(--black);
+  font-weight: bold;
+  font-size: 1.25rem;
+  padding: 1rem 2rem;
+  padding-right: 4rem;
+  clip-path: polygon(0 0, 80% 0, 100% 50%, 80% 100%, 0 100%);
+}
+
+.register {
+  background: linear-gradient(
+    120deg,
+    hsla(320, 100%, 55%, 65%) 80%,
+    hsla(320, 100%, 85%, 65%) 95%
+  );
+}
+
+.view {
+  background: linear-gradient(
+    120deg,
+    hsla(110, 100%, 55%, 65%) 80%,
+    hsla(110, 100%, 85%, 65%) 95%
+  );
+}
+
+.footer,
+.footer__social {
+  display: grid;
+  gap: 2rem;
+  justify-content: center;
+  color: var(--black);
+}
+
+.icon-logo {
+  display: block;
+  text-align: center;
+  font-size: 2rem;
+  color: var(--black);
+}
+
+.footer__brand p {
+  font-size: 0.875rem;
+  text-align: center;
+}
+
+.footer__social li {
+  display: inline-block;
+  padding: 0 0.5rem;
+}
+
+.footer__social i {
+  font-size: 1.5rem;
+  color: var(--black);
+}
+
+.footer {
+  position: relative;
+}
+
+body {
+  position: relative;
+}
+
+.footer__bg img {
+  padding: 0;
+  position: absolute;
+  width: 100%;
+  bottom: 0;
+  z-index: -1;
+}

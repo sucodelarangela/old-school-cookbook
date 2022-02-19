@@ -1,0 +1,53 @@
+* {
+  margin: 0;
+  padding: 0;
+  text-decoration: none;
+  box-sizing: border-box;
+  list-style: none;
+}
+
+:root {
+  /* Fonts */
+  --title-font: 'Beth Ellen', cursive;
+  --subtitle-font: 'Special Elite', cursive;
+  --clean-font: 'Poppins', sans-serif;
+
+  /* Colors */
+  --black: #313131;
+}
+
+body {
+  font-family: var(--clean-font);
+  background-image: url('../images/seamless-paper-texture.jpg');
+}
+
+body::after {
+  content: '';
+  background: url('../images/spiral.png');
+  background-size: 4.5rem;
+  position: fixed;
+  top: 0;
+  left: -2rem;
+  width: 4.5rem;
+  height: 100%;
+  z-index: 100;
+}
+
+.container {
+  padding: 4rem 1rem;
+  padding-left: 4rem;
+}
+
+.title {
+  font-family: var(--title-font);
+}
+
+.subtitle {
+  font-family: var(--subtitle-font);
+  font-weight: bold;
+}
+
+footer {
+  margin-left: 2rem;
+  position: relative;
+}
