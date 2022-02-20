@@ -17,6 +17,7 @@
   </head>
 
   <body>
+    <!-- Header -->
     <header class="header">
       <nav class="header__nav" data-nav>
         <h1 class="header__title title">Old-School Cookbook</h1>
@@ -30,7 +31,7 @@
         <div class="header__toggle icon-close" data-toggle></div>
       </nav>
     </header>
-
+    <!-- Main -->
     <main>
       <section class="form container">
         <form class="form__form" action="#">
@@ -51,7 +52,7 @@
             <label for="ingredients" class="form__label"
               >Ingredientes (separados por vírgula):</label
             >
-            <input
+            <textarea
               class="form__input"
               type="text"
               name=""
@@ -59,7 +60,8 @@
               placeholder="Informe os ingredientes"
               data-ingredients
               required
-            /><br />
+            ></textarea
+            ><br />
 
             <label for="procedures" class="form__label">Passo a passo:</label>
             <textarea

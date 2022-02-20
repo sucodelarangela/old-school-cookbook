@@ -38,14 +38,13 @@ function getRecipes() {
   db.collection('recipes')
     .get()
     .then(recipes => {
-      recipes.pop()
       const cardsContainer = document.querySelector('[data-cards]')
 
       recipes.forEach(obj => {
         const card = document.createElement('div')
         card.classList.add('cards__link')
-        card.innerHTML = `<div onclick="openRecipes()"><img height="120px" src="${obj.image}" alt="Prato pronto" onerror="this.onerror=null;this.src='assets/images/empty_plate.jpg'" />
-        <h4>${obj.name}</h4></div>`
+        card.innerHTML = `<div onclick="openRecipes()"><img src="${obj.image}" alt="Prato pronto" onerror="this.onerror=null;this.src='assets/images/empty_plate.jpg'" />
+        <h4 class='title'>${obj.name}</h4></div>`
         cardsContainer.appendChild(card)
       })
     })

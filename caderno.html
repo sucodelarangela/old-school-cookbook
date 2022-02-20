@@ -4,22 +4,97 @@
     <meta charset="UTF-8" />
     <meta http-equiv="X-UA-Compatible" content="IE=edge" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-    <title>The Old School Cookbook | Home</title>
+    <title>The Old School Cookbook | Caderno</title>
+    <link rel="preconnect" href="https://fonts.googleapis.com" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+    <link
+      href="https://fonts.googleapis.com/css2?family=Beth+Ellen&family=Poppins:wght@400;700&family=Special+Elite&display=swap"
+      rel="stylesheet"
+    />
+    <link rel="stylesheet" href="assets/css/base.css" />
+    <link rel="stylesheet" href="assets/css/caderno.css" />
+    <link rel="stylesheet" href="assets/fonts/icons.css" />
   </head>
+
   <body>
-    <header>
-      <h1>The Old School Cookbook</h1>
-      <a href="index.html" role="button">Home</a>
+    <!-- Header -->
+    <header class="header">
+      <nav class="header__nav" data-nav>
+        <h1 class="header__title title">Old-School Cookbook</h1>
+        <div class="header__nav--menu">
+          <ul class="header__nav--list">
+            <li><a href="index.html">Home</a></li>
+            <li><a href="cadastro.html">Cadastro</a></li>
+          </ul>
+        </div>
+        <div class="header__toggle icon-menu" data-toggle></div>
+        <div class="header__toggle icon-close" data-toggle></div>
+      </nav>
     </header>
+
+    <!-- Main -->
     <main>
-      <div>
-        <input type="search" name="" id="" />
-        <button type="submit">Pesquisar</button>
-        <a href="cadastro.html" role="button">Voltar para cadastro</a>
-      </div>
-      <div class="cards" data-cards></div>
+      <section class="search">
+        <input
+          class="form__input"
+          type="search"
+          name=""
+          id=""
+          placeholder="Digite uma palavra para pesquisar"
+        />
+        <button class="form__button title" type="submit" aria-label="Pesquisar">
+          <i class="icon-search"></i>
+        </button>
+      </section>
+
+      <section class="container">
+        <h2 class="subtitle">Receitas cadastradas</h2>
+
+        <div class="cards" data-cards></div>
+      </section>
     </main>
-    <footer>Rodapé</footer>
+
+    <!-- Footer -->
+    <footer class="footer">
+      <div class="footer__brand subtitle">
+        <a href="https://angelacaldas.vercel.app/">
+          <i class="icon-logo"></i>
+        </a>
+        <p>Design & construção por Angela Caldas</p>
+        <p>Todos os direitos reservados.</p>
+      </div>
+      <div class="footer__social">
+        <ul>
+          <li>
+            <a
+              href="https://www.linkedin.com/in/angela-caldas/"
+              target="_blank"
+            >
+              <i class="icon-linkedin"></i>
+            </a>
+          </li>
+          <li>
+            <a href="https://github.com/sucodelarangela" target="_blank">
+              <i class="icon-github"></i>
+            </a>
+          </li>
+          <li>
+            <a href="https://www.instagram.com/sucodelarangela" target="_blank">
+              <i class="icon-instagram"></i>
+            </a>
+          </li>
+          <li>
+            <a href="https://twitter.com/sucodelarangela" target="_blank">
+              <i class="icon-twitter"></i>
+            </a>
+          </li>
+        </ul>
+      </div>
+    </footer>
+
+    <div class="footer__bg">
+      <img src="assets/images/footer-bg.png" alt="" />
+    </div>
 
     <script type="module" src="assets/js/caderno.js"></script>
     <script src="https://unpkg.com/localbase/dist/localbase.dev.js"></script>

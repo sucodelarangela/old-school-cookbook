@@ -1,0 +1,249 @@
+.header {
+  padding: 1rem 4rem;
+  padding-right: 2rem;
+  position: relative;
+}
+
+.header__title {
+  font-size: 1rem;
+  color: var(--black);
+  opacity: 1;
+}
+
+.header__nav {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+}
+
+.header__nav--menu {
+  display: none;
+}
+
+.header__nav.show .header__nav--menu {
+  position: fixed;
+  background: var(--black);
+  width: 100vw;
+  height: 100vh;
+  top: 0;
+  right: 0;
+  display: grid;
+  place-content: center;
+  z-index: 100;
+}
+
+.header__nav--list,
+.header__nav--list a {
+  display: grid;
+  margin: 0 auto;
+  font-family: var(--title-font);
+  font-size: 2rem;
+  gap: 4rem;
+}
+
+.header__nav--list a {
+  position: relative;
+  color: var(--white);
+  width: fit-content;
+}
+
+.header__nav--list li a::after,
+.header__nav--list a::after {
+  content: '';
+  border: none;
+  box-shadow: -2px 2px 2px var(--white);
+  width: 0;
+  height: 0;
+  bottom: 0;
+  left: -2rem;
+  position: absolute;
+  transition: 0.3s;
+}
+
+.header__nav--list li a:hover::after,
+.header__nav--list a::after {
+  width: 150%;
+  height: 4rem;
+}
+
+.icon-menu,
+.icon-close {
+  font-size: 1.5rem;
+  cursor: pointer;
+}
+
+.icon-close {
+  visibility: hidden;
+  position: fixed;
+  color: var(--white);
+  top: 1.3rem;
+  right: 2rem;
+}
+
+.header__nav.show .icon-close {
+  visibility: visible;
+  top: 1.3rem;
+  right: 2rem;
+  z-index: 100;
+}
+
+.header::after {
+  content: '';
+  background: url('../images/tape.png') no-repeat;
+  background-size: 200px;
+  position: absolute;
+  transform: rotate(90deg);
+  width: 200px;
+  height: 50px;
+  top: -60px;
+  right: -56px;
+  z-index: -1;
+}
+
+.search {
+  display: flex;
+  padding: 1rem 2rem;
+  padding-left: 4rem;
+  gap: 1rem;
+}
+
+.form__input {
+  font-family: var(--clean-font);
+  display: flex;
+  border-radius: 0.5rem;
+  width: 100%;
+  padding: 1rem 2rem;
+}
+
+::placeholder {
+  font-family: var(--clean-font);
+  font-size: 1rem;
+}
+
+.form__button {
+  display: block;
+  margin: 0 auto;
+  padding: 0 1rem;
+  background: url('../images/tape.png');
+  font-size: 1.25rem;
+  color: var(--black);
+  border-radius: 0.5rem;
+  cursor: pointer;
+  transition: 0.2s;
+}
+
+.form__button:hover {
+  transform: translate(-2px, -2px);
+  box-shadow: 4px 4px 1px var(--black);
+}
+
+h2.subtitle {
+  text-align: center;
+  margin-bottom: 2rem;
+}
+
+.cards {
+  display: grid;
+  grid-template-columns: repeat(auto-fill, 15rem);
+  grid-template-rows: auto;
+  gap: 2rem;
+  justify-content: center;
+}
+
+.cards__link div {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+  padding: 1rem;
+  position: relative;
+  transition: 0.2s transform;
+}
+
+.cards__link div::before {
+  content: '';
+  position: absolute;
+  background-color: var(--white);
+  width: 100%;
+  height: 100%;
+  border-radius: 2px;
+  box-shadow: 2px 2px 1px var(--black), 0 0 4px var(--black);
+  z-index: -1;
+}
+
+.cards__link div:hover,
+.cards__link div:hover::before {
+  transform: scale(1.05);
+  box-shadow: 4px 4px 2px var(--black);
+}
+
+.cards__link img {
+  display: inline-block;
+  max-width: 100%;
+  margin-bottom: 1rem;
+  border: 2px solid var(--black);
+  transition: 0.2s transform;
+}
+
+.cards__link h4 {
+  color: #006b88;
+  text-align: center;
+  transform: rotate(-5deg);
+}
+
+.footer {
+  padding: 1rem 4rem;
+}
+
+.footer,
+.footer__social {
+  display: grid;
+  gap: 2rem;
+  justify-content: center;
+  color: var(--black);
+}
+
+.icon-logo {
+  display: block;
+  text-align: center;
+  font-size: 2rem;
+  color: var(--black);
+  transition: 0.2s transform;
+}
+
+.icon-logo:hover,
+.footer__social li:hover {
+  transform: rotate(-20deg);
+}
+
+.footer__brand p {
+  font-size: 0.875rem;
+  text-align: center;
+}
+
+.footer__social li {
+  display: inline-block;
+  padding: 0 0.5rem;
+  transition: 0.2s transform;
+}
+
+.footer__social i {
+  font-size: 1.5rem;
+  color: var(--black);
+}
+
+.footer {
+  position: relative;
+}
+
+body {
+  position: relative;
+}
+
+.footer__bg img {
+  padding: 0;
+  position: absolute;
+  width: 100%;
+  bottom: 0;
+  z-index: -1;
+}
