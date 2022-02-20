@@ -4,71 +4,142 @@
     <meta charset="UTF-8" />
     <meta http-equiv="X-UA-Compatible" content="IE=edge" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-    <title>The Old School Cookbook | Cadastro</title>
+    <link rel="preconnect" href="https://fonts.googleapis.com" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+    <link
+      href="https://fonts.googleapis.com/css2?family=Beth+Ellen&family=Poppins:wght@400;700&family=Special+Elite&display=swap"
+      rel="stylesheet"
+    />
+    <title>Old School Cookbook | Cadastro</title>
+    <link rel="stylesheet" href="assets/css/base.css" />
+    <link rel="stylesheet" href="assets/css/cadastro.css" />
+    <link rel="stylesheet" href="assets/fonts/icons.css" />
   </head>
+
   <body>
-    <header>
-      <h1>The Old School Cookbook</h1>
-      <a href="index.html" role="button">Home</a>
+    <header class="header">
+      <nav class="header__nav" data-nav>
+        <h1 class="header__title title">Old-School Cookbook</h1>
+        <div class="header__nav--menu">
+          <ul class="header__nav--list">
+            <li><a href="index.html">Home</a></li>
+            <li><a href="caderno.html">Caderno</a></li>
+          </ul>
+        </div>
+        <div class="header__toggle icon-menu" data-toggle></div>
+        <div class="header__toggle icon-close" data-toggle></div>
+      </nav>
     </header>
+
     <main>
-      <p>Insira nos campos abaixo os dados da sua nova receita:</p>
-      <form class="form" action="#">
-        <label for="recipeName">Título da receita:</label>
-        <input
-          class="form__input"
-          type="text"
-          name=""
-          id="recipeName"
-          data-recipeName
-          required
-        /><br />
+      <section class="form container">
+        <form class="form__form" action="#">
+          <fieldset class="subtitle">
+            <label for="recipeName" class="form__label"
+              >Título da receita:</label
+            >
+            <input
+              class="form__input"
+              type="text"
+              name=""
+              id="recipeName"
+              placeholder="Digite o nome da receita"
+              data-recipeName
+              required
+            /><br />
 
-        <label for="ingredients">Ingredientes:</label>
-        <input
-          class="form__input"
-          type="text"
-          name=""
-          id="ingredients"
-          data-ingredients
-          required
-        /><br />
+            <label for="ingredients" class="form__label"
+              >Ingredientes (separados por vírgula):</label
+            >
+            <input
+              class="form__input"
+              type="text"
+              name=""
+              id="ingredients"
+              placeholder="Informe os ingredientes"
+              data-ingredients
+              required
+            /><br />
 
-        <label for="procedures">Passo a passo:</label>
-        <textarea
-          class="form__input"
-          name=""
-          id="procedures"
-          data-procedures
-          required
-        ></textarea
-        ><br />
+            <label for="procedures" class="form__label">Passo a passo:</label>
+            <textarea
+              class="form__input"
+              name=""
+              id="procedures"
+              placeholder="Modo de preparo da sua receita"
+              data-procedures
+              required
+            ></textarea
+            ><br />
 
-        <label for="tags">Tags</label>
-        <input
-          class="form__input"
-          type="text"
-          name=""
-          id="tags"
-          data-tags
-        /><br />
+            <label for="tags" class="form__label">Tags:</label>
+            <input
+              class="form__input"
+              type="text"
+              name=""
+              id="tags"
+              placeholder="Tags para melhor identificação da receita"
+              data-tags
+            /><br />
 
-        <label for="imgUrl">URL da imagem (.jpg, .jpeg ou .png)</label>
-        <input
-          class="form__input"
-          type="text"
-          name=""
-          id="imgUrl"
-          data-imgUrl
-        /><br />
+            <label for="imgUrl" class="form__label"
+              >URL da imagem (.jpg, .jpeg ou .png)</label
+            >
+            <input
+              class="form__input"
+              type="text"
+              name=""
+              id="imgUrl"
+              placeholder="Endereço URL da imagem"
+              data-imgUrl
+            /><br />
 
-        <button class="form__button" type="submit" data-save>
-          Salvar receita
-        </button>
-      </form>
-      <a href="caderno.html">Ir para o caderno</a>
+            <button class="form__button title" type="submit" data-save>
+              Salvar receita
+            </button>
+          </fieldset>
+        </form>
+      </section>
     </main>
-    <footer>Rodapé</footer>
+    <footer class="footer">
+      <div class="footer__brand subtitle">
+        <a href="https://angelacaldas.vercel.app/">
+          <i class="icon-logo"></i>
+        </a>
+        <p>Design & construção por Angela Caldas</p>
+        <p>Todos os direitos reservados.</p>
+      </div>
+      <div class="footer__social">
+        <ul>
+          <li>
+            <a
+              href="https://www.linkedin.com/in/angela-caldas/"
+              target="_blank"
+            >
+              <i class="icon-linkedin"></i>
+            </a>
+          </li>
+          <li>
+            <a href="https://github.com/sucodelarangela" target="_blank">
+              <i class="icon-github"></i>
+            </a>
+          </li>
+          <li>
+            <a href="https://www.instagram.com/sucodelarangela" target="_blank">
+              <i class="icon-instagram"></i>
+            </a>
+          </li>
+          <li>
+            <a href="https://twitter.com/sucodelarangela" target="_blank">
+              <i class="icon-twitter"></i>
+            </a>
+          </li>
+        </ul>
+      </div>
+    </footer>
+    <div class="footer__bg">
+      <img src="assets/images/footer-bg.png" alt="" />
+    </div>
 
     <script type="module" src="assets/js/main.js"></script>
     <!-- Localbase / IndexedDB -->

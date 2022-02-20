@@ -4,6 +4,7 @@
   text-decoration: none;
   box-sizing: border-box;
   list-style: none;
+  border: none;
 }
 
 :root {
@@ -14,10 +15,13 @@
 
   /* Colors */
   --black: #313131;
+  --white: #d1d1d1;
+  --alpha: 65%;
 }
 
 body {
   font-family: var(--clean-font);
+  color: var(--black);
   background-image: url('../images/seamless-paper-texture.jpg');
 }
 
@@ -34,7 +38,7 @@ body::after {
 }
 
 .container {
-  padding: 4rem 1rem;
+  padding: 4rem 2rem;
   padding-left: 4rem;
 }
 
@@ -50,4 +54,8 @@ body::after {
 footer {
   margin-left: 2rem;
   position: relative;
+}
+
+i {
+  color: var(--black);
 }

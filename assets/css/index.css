@@ -39,17 +39,6 @@
   z-index: 10;
 }
 
-.cover__spiral {
-  background: url('../images/spiral.png') repeat-y;
-  background-size: 4.5rem;
-  position: absolute;
-  left: -2.5rem;
-  top: 0;
-  width: 4.5rem;
-  height: 100%;
-  z-index: 100;
-}
-
 .actions {
   display: grid;
   gap: 2rem;
@@ -69,17 +58,24 @@
 .register {
   background: linear-gradient(
     120deg,
-    hsla(320, 100%, 55%, 65%) 80%,
-    hsla(320, 100%, 85%, 65%) 95%
+    hsla(320, 100%, 55%, var(--alpha)) 80%,
+    hsla(320, 100%, 85%, var(--alpha)) 95%
   );
 }
 
 .view {
   background: linear-gradient(
     120deg,
-    hsla(110, 100%, 55%, 65%) 80%,
-    hsla(110, 100%, 85%, 65%) 95%
+    hsla(110, 100%, 55%, var(--alpha)) 80%,
+    hsla(110, 100%, 85%, var(--alpha)) 95%
   );
+}
+
+.register:hover,
+.view:hover {
+  --alpha: 100%;
+  transform: translate(-2px, -2px);
+  transition: 0.2s;
 }
 
 .footer,
@@ -95,6 +91,12 @@
   text-align: center;
   font-size: 2rem;
   color: var(--black);
+  transition: 0.2s transform;
+}
+
+.icon-logo:hover,
+.footer__social li:hover {
+  transform: rotate(-20deg);
 }
 
 .footer__brand p {
@@ -105,6 +107,7 @@
 .footer__social li {
   display: inline-block;
   padding: 0 0.5rem;
+  transition: 0.2s transform;
 }
 
 .footer__social i {
