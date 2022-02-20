@@ -38,6 +38,7 @@ function getRecipes() {
   db.collection('recipes')
     .get()
     .then(recipes => {
+      recipes.pop()
       const cardsContainer = document.querySelector('[data-cards]')
 
       recipes.forEach(obj => {
@@ -49,5 +50,4 @@ function getRecipes() {
       })
     })
 }
-
 export {saveRecipe, getRecipes}

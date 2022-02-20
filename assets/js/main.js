@@ -5,27 +5,15 @@ saveBtn.addEventListener('click', saveRecipe)
 
 // Resize textarea height according to content
 const procedures = document.querySelector('[data-procedures]')
+const ingredients = document.querySelector('[data-ingredients]')
+
 procedures.addEventListener('input', function (e) {
   this.style.height = 'auto'
   this.style.height = this.scrollHeight + 'px'
 })
-
-// Prevent white spaces on ingredients and tags inputs
-const ingredients = document.querySelector('[data-ingredients]')
-const tags = document.querySelector('[data-tags]')
-
-ingredients.addEventListener('keypress', function (event) {
-  var key = event.keyCode
-  if (key === 32) {
-    event.preventDefault()
-  }
-})
-
-tags.addEventListener('keypress', function (event) {
-  var key = event.keyCode
-  if (key === 32) {
-    event.preventDefault()
-  }
+ingredients.addEventListener('input', function (e) {
+  this.style.height = 'auto'
+  this.style.height = this.scrollHeight + 'px'
 })
 
 //Toggle menu open

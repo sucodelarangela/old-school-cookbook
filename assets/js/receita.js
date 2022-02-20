@@ -11,7 +11,7 @@ function openRecipes() {
         .get()
         .then(recipe => {
           const name = recipe.name
-          const ingredients = recipe.ingredients.split(' ')
+          const ingredients = recipe.ingredients.split(',')
           const items = []
           console.log(ingredients)
           for (let i = 0; i < ingredients.length; i++) {
