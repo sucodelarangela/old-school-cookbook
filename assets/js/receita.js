@@ -120,16 +120,23 @@ function openRecipes() {
       <div class="footer__bg">
         <img src="assets/images/footer-bg.png" alt="" />
       </div>
-                <script>
-              const nav = document.querySelector('[data-nav]')
-const menuButton = document.querySelectorAll('[data-toggle]')
+      <script>
+        const nav = document.querySelector('[data-nav]')
+        const menuButton = document.querySelectorAll('[data-toggle]')
 
-for (const elem of menuButton) {
-  elem.addEventListener('click', () => {
-    nav.classList.toggle('show')
-  })
-}
-</script>
+        for (const elem of menuButton) {
+          elem.addEventListener('click', () => {
+            nav.classList.toggle('show')
+          })
+        }
+
+        function deleteRecipe() {
+          const title = document.querySelector('h4').innerText
+          db.collection('recipes').doc({name: title}).delete()
+          location.reload()
+        }
+
+      </script>
             </body>
           </html>`
           )
