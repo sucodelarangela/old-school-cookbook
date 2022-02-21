@@ -76,7 +76,7 @@ function openRecipes() {
           <p>${tags}</p>
         </section>
         <section class="container">
-          <button class="form__button" type="button" onclick="deleteRecipe()">Excluir receita</button>
+          <button class="form__button title" type="button" onclick="deleteRecipe()">Excluir receita</button>
         </section>
       </main>
       <!-- Footer -->
