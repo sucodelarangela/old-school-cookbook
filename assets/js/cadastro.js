@@ -29,8 +29,10 @@ function saveRecipe() {
     tags.value = ''
 
     db.collection('recipes').doc('start').delete({})
+    alert('Receita salva com sucesso')
   } else {
     alert('Insira um formato de imagem válido')
+    imageUrl.focus()
   }
 }
 
