@@ -51,6 +51,10 @@ body::after {
   font-weight: bold;
 }
 
+pre {
+  font-family: var(--clean-font);
+}
+
 footer {
   margin-left: 2rem;
   position: relative;

@@ -121,6 +121,7 @@
 
 textarea.form__input {
   resize: none;
+  white-space: pre-wrap;
 }
 
 ::placeholder {
