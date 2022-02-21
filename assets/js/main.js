@@ -3,7 +3,10 @@ import {saveRecipe} from './cadastro.js'
 const saveBtn = document.querySelector('[data-save]')
 const tags = document.querySelector('[data-tags]')
 saveBtn.addEventListener('click', saveRecipe)
-tags.addEventListener('submit', saveRecipe)
+tags.addEventListener('submit', e => {
+  e.preventDefault()
+  saveRecipe()
+})
 
 // Resize textarea height according to content
 const procedures = document.querySelector('[data-procedures]')

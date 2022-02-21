@@ -60,7 +60,7 @@ function openRecipes() {
         <section class="container">
           <div class="cards">
             <div class="cards__link">
-              <img src="${recipeImg}" alt="Comida pronta" onerror="this.onerror=null;this.src='assets/images/empty_plate.jpg'" />
+              <img class="cards__link--img" src="${recipeImg}" alt="Comida pronta" onerror="this.onerror=null;this.src='assets/images/empty_plate.jpg'" />
               <h4 class="title">${name}</h4>
               <img class="cards__tape-1" src="assets/images/tape-1.png" alt=""/>
               <img class="cards__tape-2" src="assets/images/tape-1.png" alt=""/>
