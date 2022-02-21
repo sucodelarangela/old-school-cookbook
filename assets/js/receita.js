@@ -70,8 +70,8 @@ function openRecipes() {
         <section class="directions">
           <h3 class="subtitle">Ingredientes:</h3>
           <ul>${items}</ul>
-          <pre><h3>Passo a passo:</h3>
-          <p>${procedures}</p></pre>
+          <h3 class="subtitle">Passo a passo:</h3>
+          <pre><p>${procedures}</p></pre>
           <h3 class="subtitle">Tags:</h3>
           <p>${tags}</p>
         </section>

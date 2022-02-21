@@ -2,7 +2,10 @@ import {saveRecipe} from './cadastro.js'
 
 const saveBtn = document.querySelector('[data-save]')
 const tags = document.querySelector('[data-tags]')
-saveBtn.addEventListener('click', saveRecipe)
+saveBtn.addEventListener('click', e => {
+  e.preventDefault()
+  saveRecipe()
+})
 tags.addEventListener('submit', e => {
   e.preventDefault()
   saveRecipe()

@@ -30,7 +30,7 @@ function saveRecipe() {
 
     db.collection('recipes').doc('start').delete({})
   } else {
-    console.log('erro')
+    alert('Insira um formato de imagem válido')
   }
 }
 
