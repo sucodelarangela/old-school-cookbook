@@ -53,8 +53,8 @@ A função de busca também está em execução e estará disponível em breve!
   <h2>
     <a href="https://angelacaldas-portfolio-2022.netlify.app/" target="_blank" style="text-decoration: none; color: white">Old School Cookbook</a>
   </h2>
-  <p>O seu caderno de receitas!</p>
-  <p>Acesse o site aqui via <a href="https://angelacaldas.vercel.app">Vercel</a></p>
+  <p>Your recipe book!</p>
+  <p>Visit the website here via <a href="https://angelacaldas.vercel.app">Vercel</a></p>
 </div>
 
 ## Overview
