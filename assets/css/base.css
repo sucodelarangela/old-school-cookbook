@@ -37,6 +37,10 @@ body::after {
   z-index: 100;
 }
 
+main {
+  min-height: 100vh;
+}
+
 .container {
   padding: 4rem 2rem;
   padding-left: 4rem;
@@ -53,6 +57,8 @@ body::after {
 
 pre {
   font-family: var(--clean-font);
+  white-space: pre-wrap;
+  overflow-wrap: break-word;
 }
 
 footer {
@@ -62,4 +68,12 @@ footer {
 
 i {
   color: var(--black);
+}
+
+/* ===== MEDIA QUERIES ===== */
+@media screen and (min-width: 768px) {
+  .container {
+    padding: 6rem 3rem;
+    padding-left: 6rem;
+  }
 }

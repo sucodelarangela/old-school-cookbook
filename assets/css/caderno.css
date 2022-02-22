@@ -189,6 +189,7 @@ h2.subtitle {
 .cards__link h4 {
   color: #006b88;
   text-align: center;
+  line-height: 1.5rem;
   transform: rotate(-5deg);
 }
 
