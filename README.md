@@ -1,12 +1,12 @@
 _For the English version of this README, click [here](#English)_
 
 <div align="center">
-  <img src="https://raw.githubusercontent.com/sucodelarangela/old-school-cookbook/master/assets/images/cookbook-logo.png" alt="Angela's logo" style="width: 300px">
+  <img src="https://raw.githubusercontent.com/sucodelarangela/old-school-cookbook/master/assets/images/cookbook-logo.png" alt="Logo do website" style="width: 300px">
   <h2>
-    <a href="https://oldschool-cookbook.vercel.app" target="_blank" style="text-decoration: none; color: white">Old School Cookbook</a>
+  <a href="https://oldschool-cookbook.vercel.app" target="_blank" style="text-decoration: none; color: white">Old School Cookbook</a>
   </h2>
   <p>O seu caderno de receitas!</p>
-  <p>Acesse o site aqui via <a href="https://oldschool-cookbook.vercel.app">Vercel</a></p>
+  <p>Acesse o site aqui via <a href="https://oldschool-cookbook.vercel.app" target="_blank">Vercel</a></p>
 </div>
 
 ## Visão geral
@@ -35,8 +35,8 @@ A função de busca também está em execução e estará disponível em breve!
 
 <div style="display: grid; grid-auto-flow:column; width: fit-content; gap: 0.5rem;">
   <img height="25px" src="https://cdn.jsdelivr.net/gh/devicons/devicon/icons/html5/html5-original.svg" />
-  <img height="25px" src="https://cdn.jsdelivr.net/gh/devicons/devicon/icons/css3/css3-original.svg" /><br>
-  <img height="25px" src="https://cdn.jsdelivr.net/gh/devicons/devicon/icons/javascript/javascript-original.svg" /><br>
+  <img height="25px" src="https://cdn.jsdelivr.net/gh/devicons/devicon/icons/css3/css3-original.svg" />
+  <img height="25px" src="https://cdn.jsdelivr.net/gh/devicons/devicon/icons/javascript/javascript-original.svg" />
 </div>
 <br>
 <div>
@@ -51,10 +51,10 @@ A função de busca também está em execução e estará disponível em breve!
 <div align="center">
   <img src="https://raw.githubusercontent.com/sucodelarangela/old-school-cookbook/master/assets/images/cookbook-logo.png" alt="Angela's logo" style="width: 300px">
   <h2>
-    <a href="https://oldschool-cookbook.vercel.app" target="_blank" style="text-decoration: none; color: white">Old School Cookbook</a>
+  <a href="https://oldschool-cookbook.vercel.app" target="_blank" style="text-decoration: none; color: white">Old School Cookbook</a>
   </h2>
   <p>Your recipe book!</p>
-  <p>Visit the website here via <a href="https://oldschool-cookbook.vercel.app">Vercel</a></p>
+  <p>Visit the website here via <a href="https://oldschool-cookbook.vercel.app" target="_blank">Vercel</a></p>
 </div>
 
 ## Overview
@@ -83,8 +83,8 @@ The search bar is also being implemented and will be available soon!
 
 <div style="display: grid; grid-auto-flow:column; width: fit-content; gap: 0.5rem;">
   <img height="25px" src="https://cdn.jsdelivr.net/gh/devicons/devicon/icons/html5/html5-original.svg" />
-  <img height="25px" src="https://cdn.jsdelivr.net/gh/devicons/devicon/icons/css3/css3-original.svg" /><br>
-  <img height="25px" src="https://cdn.jsdelivr.net/gh/devicons/devicon/icons/javascript/javascript-original.svg" /><br>
+  <img height="25px" src="https://cdn.jsdelivr.net/gh/devicons/devicon/icons/css3/css3-original.svg" />
+  <img height="25px" src="https://cdn.jsdelivr.net/gh/devicons/devicon/icons/javascript/javascript-original.svg" />
 </div>
 <br>
 <div>
