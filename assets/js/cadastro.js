@@ -45,11 +45,37 @@ function getRecipes() {
       recipes.forEach(obj => {
         const card = document.createElement('div')
         card.classList.add('cards__link')
-        card.innerHTML = `<div onclick="openRecipes()"><img src="${obj.image}" alt="Prato pronto" onerror="this.onerror=null;this.src='assets/images/empty_plate.jpg'" />
-        <h4 class='title'>${obj.name}</h4></div>`
+        card.innerHTML = `<div onclick="openRecipes()" c><img src="${obj.image}" alt="Prato pronto" onerror="this.onerror=null;this.src='assets/images/empty_plate.jpg'" />
+        <h4 class='title'>${obj.name}</h4>
+        <p style="display:none;" data-tags="hidden">${obj.tags}</p>
+        </div>`
         cardsContainer.appendChild(card)
       })
     })
 }
 
-export {saveRecipe, getRecipes}
+function search() {
+  const tagToSearch = document.querySelector('[data-search]')
+  const tagNames = document.querySelectorAll('[data-tags="hidden"]')
+  const errorMsg = document.querySelector('[data-error]')
+
+  tagNames.forEach(tag => {
+    if (tag.textContent.includes(tagToSearch.value)) {
+    } else {
+      tag.parentNode.parentNode.style.display = 'none'
+    }
+
+    tagToSearch.addEventListener('keydown', event => {
+      const key = event.key
+      if (
+        ((key === 'Backspace' || key === 'Delete' || key === 'Escape') &&
+          tagToSearch.value.length == 1) ||
+        key === 'Escape'
+      ) {
+        tag.parentNode.parentNode.style.display = 'grid'
+      }
+    })
+  })
+}
+
+export {saveRecipe, getRecipes, search}

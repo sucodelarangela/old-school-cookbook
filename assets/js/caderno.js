@@ -1,4 +1,4 @@
-import {getRecipes} from './cadastro.js'
+import {getRecipes, search} from './cadastro.js'
 
 getRecipes()
 
@@ -11,3 +11,6 @@ for (const elem of menuButton) {
     nav.classList.toggle('show')
   })
 }
+
+const searchInput = document.querySelector('[data-search]')
+searchInput.addEventListener('input', search)
