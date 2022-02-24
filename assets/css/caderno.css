@@ -115,6 +115,10 @@
   padding: 1rem 2rem;
 }
 
+.form__input::-webkit-search-cancel-button {
+  -webkit-appearance: none;
+}
+
 ::placeholder {
   font-family: var(--clean-font);
   font-size: 1rem;
