@@ -27,9 +27,9 @@ Simples, não?
 
 ## Implementações futuras
 
-Atualmente, o projeto está com responsividade compatível apenas com dispositivos _mobile_, então, se você abrir no computador, vai ver o layout um pouco bagunçado, mas ainda assim funcional. Nos próximos dias, o _layout_ já estará adequado a dispositivos desktop!
+Atualmente, o projeto está com responsividade compatível apenas com dispositivos _mobile_, então, se você abrir no computador, vai ver o layout um pouco bagunçado, mas ainda assim funcional. Nos próximos dias, o _layout_ já estará adequado a dispositivos desktop! Além disso, farei a estilização das tags em breve.
 
-Além disso, farei a estilização das tags em breve.
+O sistema de busca não está totalmente funcional em dispositivos Android, parece haver algum problema com o evento keydown. Estou trabalhando na resolução.
 
 ## Linguagens e bibliotecas utilizadas:
 
@@ -78,6 +78,8 @@ Simple, isn't it?
 The layout of the project is currently only compatible with mobile devices, so if you open it on a PC or laptop, you will probably have a little messy display, but still functional. Ina few days it will be completely responsive!
 
 I will fix the tags appearanes soon too!
+
+The search bar is not working properly on Android devices, it seems there is a problem with the keydown event. I am working on it.
 
 ## Languages and libraries used in the project:
 
