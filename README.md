@@ -27,9 +27,9 @@ Simples, não?
 
 ## Implementações futuras
 
-Atualmente, o projeto está com responsividade compatível apenas com dispositivos _mobile_, então, se você abrir no computador, vai ver o layout um pouco bagunçado, mas ainda assim funcionla. Nos próximos dias, o _layout_ já estará adequado a dispositivos desktop!
+Atualmente, o projeto está com responsividade compatível apenas com dispositivos _mobile_, então, se você abrir no computador, vai ver o layout um pouco bagunçado, mas ainda assim funcional. Nos próximos dias, o _layout_ já estará adequado a dispositivos desktop!
 
-A função de busca também está em execução e estará disponível em breve!
+Além disso, farei a estilização das tags em breve.
 
 ## Linguagens e bibliotecas utilizadas:
 
@@ -77,7 +77,7 @@ Simple, isn't it?
 
 The layout of the project is currently only compatible with mobile devices, so if you open it on a PC or laptop, you will probably have a little messy display, but still functional. Ina few days it will be completely responsive!
 
-The search bar is also being implemented and will be available soon!
+I will fix the tags appearanes soon too!
 
 ## Languages and libraries used in the project:
 
